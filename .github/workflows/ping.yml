@@ -1,0 +1,12 @@
+name: Ping API
+
+on:
+  schedule:
+    - cron: "*/1 * * * *"  # Runs every minute
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send ping request
+        run: curl -X GET https://aternos.org/ajax/server/extend-end?SEC=cm2o4vp3mh700000%3A4w8lsa74tva00000&TOKEN=PdhZINlUPQWXInuouZrs&SERVER=yNMeyWGiZ80w3mVy
